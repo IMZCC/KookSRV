@@ -4,7 +4,7 @@ bot-token: ""
 channels:
   global: "0000000000000"
 invite-link: "00000000000"
-avatar-url: "https://crafthead.net/avatar/{0}/{1}"
+avatar-url: "https://crafthead.net/avatar/{0}/{1}.jpg"
 
 #MySQL database settings.
 database:

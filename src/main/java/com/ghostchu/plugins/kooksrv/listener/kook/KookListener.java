@@ -60,7 +60,7 @@ public class KookListener implements Listener {
             return;
         }
         User sender = event.getMessage().getSender();
-        TextChannel channel = event.getChannel();
+        TextChannel channel = (TextChannel) event.getChannel();
         Guild guild = channel.getGuild();
         String message = textComponent.toString();
         String senderNickname = sender.getFullName(guild);
@@ -99,7 +99,7 @@ public class KookListener implements Listener {
             return;
         }
         User sender = event.getMessage().getSender();
-        TextChannel channel = event.getChannel();
+        TextChannel channel = (TextChannel) event.getChannel();
         Guild guild = channel.getGuild();
         Component senderDisplay = guildManager.getUserDisplayName(sender, guild).join();
         String channelName = channel.getName();
